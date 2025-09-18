@@ -25,11 +25,14 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 
 ## 📊 Network Diagram
 ```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
+    DC01[DC01 - Domain Controller<br/>silverline.local]
+    FS01[FS01 - File Server<br/>Department Shares]
+    CLIENT1[CLIENT1 - Windows 11 Pro]
+    CLIENT2[CLIENT2 - Windows 11 Pro]
+
+    DC01 --> FS01
+    DC01 --> CLIENT1
+    DC01 --> CLIENT2
 ```
 ---
 
