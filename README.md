@@ -24,13 +24,13 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 ---
 
 ## 📊 Network Diagram
----mermaid
+```mermaid
 graph TD;
   A-->B;
   A-->C;
   B-->D;
   C-->D;
----
+```
 ---
 
 ## 📸 Screenshots
