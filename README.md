@@ -25,9 +25,9 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 
 ## 📊 Network Diagram
 ```mermaid
-    DC01 --> FS01
-    DC01 --> CLIENT1
-    DC01 --> CLIENT2
+    DC01-->FS01;
+    DC01-->CLIENT1;
+    DC01-->CLIENT2;
 ```
 ---
 
