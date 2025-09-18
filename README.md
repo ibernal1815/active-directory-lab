@@ -24,15 +24,7 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 ---
 
 ## 📊 Network Diagram
-graph TD
-    DC01[DC01 - Domain Controller<br/>silverline.local]
-    FS01[FS01 - File Server<br/>Department Shares]
-    CLIENT1[CLIENT1 - Windows 11 Pro]
-    CLIENT2[CLIENT2 - Windows 11 Pro]
-
-    DC01 --> FS01
-    DC01 --> CLIENT1
-    DC01 --> CLIENT2
+<pre> +----------------------+ | DC01 (Domain Ctrl) | | silverline.local | +----------+-----------+ | ----------------------------------------- | | +----------------------+ +----------------------+ | FS01 (File Server) | | CLIENT1 (Win 11) | | Dept Shares (HR, IT)| +----------------------+ +----------------------+ +----------------------+ | CLIENT2 (Win 11) | +----------------------+ </pre>
 
 ---
 
