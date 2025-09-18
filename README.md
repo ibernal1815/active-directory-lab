@@ -1,7 +1,7 @@
 # 🖥️ Active Directory Lab
 
-This project demonstrates a simulated enterprise IT environment using **Active Directory (AD)**, **File Server**, and **Windows 10/11 clients**.  
-The goal is to showcase IT support and system administration skills relevant for entry-level IT roles.
+This project simulates a small enterprise IT environment for **Silverline Technologies**, demonstrating practical IT skills in **Active Directory (AD)**, **File Server management**, **client domain integration**, and **Group Policy Objects (GPOs)**.  
+It is designed to showcase skills relevant to entry-level IT Support / Systems Administrator positions.
 
 ---
 
