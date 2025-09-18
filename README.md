@@ -24,8 +24,13 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 ---
 
 ## 📊 Network Diagram
-<pre> +----------------------+ | DC01 (Domain Ctrl) | | silverline.local | +----------+-----------+ | ----------------------------------------- | | +----------------------+ +----------------------+ | FS01 (File Server) | | CLIENT1 (Win 11) | | Dept Shares (HR, IT)| +----------------------+ +----------------------+ +----------------------+ | CLIENT2 (Win 11) | +----------------------+ </pre>
-
+---mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+---
 ---
 
 ## 📸 Screenshots
