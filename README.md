@@ -1,7 +1,6 @@
 # 🖥️ Active Directory Lab
 
-This project simulates a small enterprise IT environment for **Silverline Technologies**, demonstrating practical IT skills in **Active Directory (AD)**, **File Server management**, **client domain integration**, and **Group Policy Objects (GPOs)**.  
-It is designed to showcase skills relevant to entry-level IT Support / Systems Administrator positions.
+This project simulates a small enterprise IT environment for **Silverline Technologies**, demonstrating practical IT skills in **Active Directory (AD)**, **File Server management**, **client domain integration**, and **Group Policy Objects (GPOs)**. It is designed to showcase skills relevant to entry-level IT Support / Systems Administrator positions.
 
 ---
 
