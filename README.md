@@ -12,12 +12,14 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 ---
 
 ## 🗂️ Features Demonstrated
-- AD DS setup with users, groups, and organizational units (OUs)
-- File Server shares with restricted group-based permissions
+- Active Directory domain setup: `silverline.local` (although, in this case, you can make it whatever you want your fake enterprise to be)
+- Organizational Units (OUs) for HR, Finance, and IT departments
+- User and group management with role-based access
+- File Server shares with NTFS + Share permissions
 - Domain join process for Windows 11 clients
-- Group Policy Objects (GPOs) for password policy, desktop settings, etc.
+- Group Policy Objects (password complexity, folder redirection, desktop restrictions)
 - PowerShell automation (bulk user creation from CSV)
-- Troubleshooting case studies (password reset, access denied issues)
+- Troubleshooting case studies (e.g., password resets, access denied to shares)
 
 ---
 
