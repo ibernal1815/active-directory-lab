@@ -23,26 +23,35 @@ This project simulates a small enterprise IT environment for **Silverline Techno
 
 ---
 
+## 📊 Network Diagram
+      [DC01: Silverline Domain Controller]
+                    |
+         -------------------------
+         |                       |
+  [FS01: File Server]     [CLIENT1 / CLIENT2]
 
 ---
 
 ## 📸 Screenshots
-Screenshots of setup and testing can be found in the [`/docs/screenshots`](docs/screenshots) folder:
+Screenshots of setup and testing are stored in [`/docs/screenshots`](docs/screenshots):
 - Domain Controller setup
 - OU structure in ADUC
-- File server share permissions
+- File share permissions
 - Client domain join
-- Applied GPOs
+- GPOs applied on clients
 
 ---
 
 ## ⚡ Automation
-PowerShell script for bulk user creation is available in [`/scripts`](scripts).
+- PowerShell scripts in [`/scripts`](scripts) demonstrate automation:
+  - Bulk user creation
+  - Network drive mapping
 
 ---
 
 ## 📝 Case Studies
-Example IT support tickets and resolutions are documented in [`/cases`](cases).
+Example IT support tickets for Silverline Technologies are documented in [`/cases`](cases):
 - Resetting a forgotten password
-- Troubleshooting access denied to file shares
+- Troubleshooting access denied issues
+- Applying Group Policies for compliance
 
