@@ -5,7 +5,7 @@ IT tested the deployment of multiple GPOs to ensure policy consistency across cl
 
 ## Policies Tested
 1. **Password Policy**
-   - Minimum length = 8
+   - Minimum length = 12
    - Complexity enabled
    - Lockout threshold = 3 invalid attempts
 
