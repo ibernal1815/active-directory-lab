@@ -31,14 +31,14 @@ This lab was built on a personal workstation using VirtualBox with multiple Wind
 
 ## 🔹 VM Configurations
 ### DC01 (Domain Controller)
-- OS: Windows Server 2019/2022
+- OS: Windows Server 2022
 - RAM: 6 GB
 - vCPUs: 2
 - Roles: Active Directory, DNS, (future: RRAS)
 - Network: Host-Only + NAT (for updates)
 
 ### FS01 (File Server)
-- OS: Windows Server 2019/2022
+- OS: Windows Server 2022
 - RAM: 6 GB
 - vCPUs: 2
 - Roles: File Server
