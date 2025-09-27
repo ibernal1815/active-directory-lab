@@ -97,9 +97,9 @@ Screenshots of setup and testing are stored in [`/docs/screenshots`](docs/screen
 
 ## ⚡ Automation
 - PowerShell scripts in [`/scripts`](scripts) demonstrate automation:
-  - Bulk user creation
-  - Network drive mapping
-  - Resetting passwords
+  - [Bulk User Creation](scripts/bulk_user_creation.ps1)
+  - [Mapping Network Drives](scripts/map_network_drives.ps1)
+  - [Resetting Passwords](scripts/reset_password.ps1)
 
 ---
 
