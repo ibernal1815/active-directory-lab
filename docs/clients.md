@@ -1,11 +1,12 @@
 # Clients (CLIENT1, CLIENT2)
 
 ## Setup
-- Joined to domain `silverline.local`
-- DNS set to `10.0.25.10` (DC01)
-- Default Gateway = DC01 (for RRAS Phase 5)
+- Joined both clients to domain: `silverline.local`
+- DNS manually pointed to 10.0.25.10 (DC01)
 
 ## Testing
-- Domain logins work with departmental accounts
-- Mapped drives applied via GPO
-- Cross-client testing confirms file sharing
+- Users can log in with their domain accounts
+- Group Policy Objects applied successfully:
+  - Login banner shown at login
+  - Password policy enforced
+  - Departmental drives mapped (H:/I:/F:) plus shared drive Z:
