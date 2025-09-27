@@ -1,20 +1,23 @@
 # Domain Controller (DC01)
 
 ## Setup
-- Installed **Active Directory Domain Services** and promoted server to DC
+- Installed **Active Directory Domain Services** and promoted DC01 as the domain controller
 - Domain name: `silverline.local`
-- DNS zone created automatically
-- Reverse lookup zone added for `10.0.25.0/24`
+- Forward and reverse lookup zones created
 
-## Users and Groups
-- OUs created:
-  - Silverline Technologies
-    - HR, IT, Finance, Users, Computers
-- Security groups:
-  - HR_Group, IT_Group, Finance_Group
+## Organizational Units (OUs)
+- Silverline Technologies
+  - HR
+  - IT
+  - Finance
+  - Users
+  - Computers
 
-## Bulk User Creation
-- Added script `scripts/bulk_user_creation.ps1`
-- Users imported from CSV into their department OUs
-- Each user added to their department group
-- Default password: `$silverline2025$`
+## Users & Groups
+- Users created manually and via bulk script
+  - Example: alice.johnson (HR), bob.smith (IT), carol.davis (Finance)
+- Groups created:
+  - HR_Group
+  - IT_Group
+  - Finance_Group
+- Users assigned to their department groups
