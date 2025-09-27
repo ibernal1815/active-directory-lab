@@ -1,25 +1,71 @@
-# 🖥️ Active Directory Lab
+# Silverline Technologies Active Directory Lab
 
-This project simulates a small enterprise IT environment for **Silverline Technologies**, demonstrating practical IT skills in **Active Directory (AD)**, **File Server management**, **client domain integration**, and **Group Policy Objects (GPOs)**. It is designed to showcase skills relevant to entry-level IT Support / Systems Administrator positions.
+This repository documents a complete **Active Directory lab environment** for a fictional company, **Silverline Technologies**.  
+The lab simulates a small enterprise setup with a domain controller, file server, and Windows clients.  
 
----
-
-## 🔧 Lab Components
-- **Domain Controller (DC01)** → Windows Server 2019 (Active Directory Domain Services)
-- **File Server (FS01)** → Windows Server 2019 (Shared folders with NTFS + Share permissions)
-- **Clients (CLIENT1, CLIENT2)** → Windows 11 Pro (joined to domain)
+It demonstrates skills in **Active Directory, DNS, Group Policy, File Services, and IT troubleshooting** — all key areas for IT Support, Helpdesk, and System Administrator roles.
 
 ---
 
-## 🗂️ Features Demonstrated
-- Active Directory domain setup: `silverline.local` (although, in this case, you can make it whatever you want your fake enterprise to be)
-- Organizational Units (OUs) for HR, Finance, and IT departments
-- User and group management with role-based access
-- File Server shares with NTFS + Share permissions
-- Domain join process for Windows 11 clients
-- Group Policy Objects (password complexity, folder redirection, desktop restrictions)
-- PowerShell automation (bulk user creation from CSV)
-- Troubleshooting case studies (e.g., password resets, access denied to shares)
+## 🔷 Lab Environment
+
+- **Domain Controller (DC01)**  
+  Active Directory Domain Services (AD DS), DNS  
+  Domain: `silverline.local`
+
+- **File Server (FS01)**  
+  Shared folders and departmental shares with NTFS + Share permissions
+
+- **Clients (CLIENT1, CLIENT2)**  
+  Windows 10/11 workstations, joined to the domain
+
+- **Networking**  
+  VirtualBox Host-Only network: `10.0.25.0/24`  
+  Static IPs assigned to each VM  
+  Clients point DNS to DC01 (10.0.25.10)
+
+- **Host PC Specs**  
+  - Intel 10-core / 16-thread CPU  
+  - 48 GB DDR4 RAM  
+  - 2 TB HDD (VM storage)  
+  - Windows 11 Pro host  
+  - Oracle VirtualBox  
+
+---
+
+## 🔷 Project Phases
+
+### Phase 1 — Active Directory + DNS Setup
+- Promoted DC01 as domain controller
+- Created `silverline.local` domain + DNS zones
+- Verified name resolution and connectivity
+
+### Phase 2 — File Server Setup
+- Configured FS01 with shared folders:
+  - `\\FS01\Shared` (all users)
+  - Departmental shares: HR, IT, Finance
+- Applied NTFS + Share permissions
+- Tested access and “Access Denied” scenarios
+
+### Phase 3 — OUs, Users, Groups, and Group Policies
+- Created OUs for HR, IT, Finance, Users, and Computers
+- Added users manually and via bulk script
+- Created security groups and assigned users
+- Applied Group Policies:
+  - Password policy (length, complexity, lockout)
+  - Login banner
+  - Drive mappings (Z: shared drive, H:/I:/F: for departments)
+- Tested with domain users on CLIENT1 and CLIENT2
+
+---
+
+## 🔷 Key Skills Demonstrated
+- Active Directory design and management
+- DNS configuration and troubleshooting
+- File server permissions (NTFS vs Share)
+- Group Policy Objects (GPOs) for security and automation
+- Bulk user creation with PowerShell
+- Common IT troubleshooting workflows (DNS issues, permissions, password resets)
 
 ---
 
@@ -61,4 +107,3 @@ Example IT support tickets for Silverline Technologies are documented in [`/case
 - Resetting a forgotten password
 - Troubleshooting access denied issues
 - Applying Group Policies for compliance
-
