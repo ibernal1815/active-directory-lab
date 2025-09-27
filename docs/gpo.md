@@ -1,20 +1,21 @@
-# Group Policy Objects
+# Group Policy Objects (Phase 3)
 
 ## Password Policy
-- Enforced in Default Domain Policy:
-  - Minimum length = 12
+- Applied via Default Domain Policy
+- Settings:
+  - Minimum password length = 8
   - Complexity = Enabled
-  - Lockout after 3 attempts
+  - Lockout threshold = 3 invalid attempts
 
 ## Login Banner
-- GPO: "Login Banner Policy"
-- Message shown at login:  
-  "Welcome to Silverline Technologies. Unauthorized access is prohibited. All activity may be monitored."
+- Custom GPO created
+- Title: "Silverline Technologies Security Notice"
+- Message: "Unauthorized access is prohibited. All activity may be monitored."
 
 ## Drive Mapping
-- GPO: "Map Shared Drive"
-- Z: → \\FS01\Shared
-- GPO: "Departmental Drive Mapping"
-  - HR_Group → H:
-  - IT_Group → I:
-  - Finance_Group → F:
+- GPO: Map Shared Drive
+  - Z: → \\FS01\Shared
+- GPO: Departmental Drive Mapping (Item-Level Targeting)
+  - HR_Group → H: → \\FS01\HR_Share
+  - IT_Group → I: → \\FS01\IT_Share
+  - Finance_Group → F: → \\FS01\Finance_Share
