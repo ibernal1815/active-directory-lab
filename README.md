@@ -13,8 +13,8 @@ It demonstrates skills in **Active Directory, DNS, Group Policy, File Services, 
   Active Directory Domain Services (AD DS), DNS  
   Domain: `silverline.local`
 
-- **File Server (FS01)**  
-  Shared folders and departmental shares with NTFS + Share permissions
+  Shared folders and departmental shares with NTFS + Shar
+- **File Server (FS01)**  e permissions
 
 - **Clients (CLIENT1, CLIENT2)**  
   Windows 10/11 workstations, joined to the domain
@@ -99,11 +99,13 @@ Screenshots of setup and testing are stored in [`/docs/screenshots`](docs/screen
 - PowerShell scripts in [`/scripts`](scripts) demonstrate automation:
   - Bulk user creation
   - Network drive mapping
+  - Resetting passwords
 
 ---
 
 ## 📝 Case Studies
 Example IT support tickets for Silverline Technologies are documented in [`/cases`](cases):
-- Resetting a forgotten password
-- Troubleshooting access denied issues
-- Applying Group Policies for compliance
+- [Resetting a Forgotten Password](cases/password_reset.md)
+- [Troubleshooting Access Denied](cases/access_denied.md)
+- [Applying Group Policies](cases/apply_gpo.md)
+
